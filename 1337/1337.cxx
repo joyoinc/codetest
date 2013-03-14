@@ -1,4 +1,3 @@
-/*
 Please write complete compilable code.
 Read input from standard input (STDIN) and print output to standard output(STDOUT).
 
