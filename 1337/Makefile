@@ -4,7 +4,8 @@ CFLAGS=-ggdb
 #LINK = -L/home/nia/bin -lmyutil
 LINK =
 
-OBJ = main.o is_palindrome.o anagrams.o triangle.o
+OBJ = main.o is_palindrome.o anagrams.o triangle.o \
+			build_tree.o gray_code.o reverse.o
 #LIB = util.o
 
 leetcode : $(OBJ)

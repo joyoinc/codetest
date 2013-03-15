@@ -1,3 +1,5 @@
+        // Start typing your C/C++ solution below
+        // DO NOT write int main() function
 Please write complete compilable code.
 Read input from standard input (STDIN) and print output to standard output(STDOUT).
 
@@ -38,30 +40,6 @@ bool exist(vector<vector<char> > &board, string word) {
         
     }
 
-TreeNode *buildTree(vector<int> &inorder, vector<int> &postorder) {
-        // Start typing your C/C++ solution below
-        // DO NOT write int main() function
-        int n = inorder.size();
-        if(!n) return 0;
-        assert(n);
-        int n2 = postorder.size();
-        assert(n2); assert(n==n2);
-        
-        return buildTreeHelper(inorder, postorder, 0, n-1, 0, n-1);   
-    }
-
-    TreeNode *buildTreeHelper(vector<int> &inorder, vector<int> &postorder
-    ,int is, int ie, int ps, int pe) {
-        // Start typing your C/C++ solution below
-        // DO NOT write int main() function
-        if(is>ie||ps>pe) return NULL;
-        
-        TreeNode * root = new TreeNode(postorder[pe]);
-        int i=is; while(i<=ie && inorder[i]!=postorder[pe]) i++;
-        root->left = buildTreeHelper(inorder, postorder, is, i-1, ps, ps+i-1-is);
-        root->right = buildTreeHelper(inorder, postorder, i+1, ie, ps+i-is, pe-1);
-        return root;
-    }
 
 	string intToRoman(int num) {
 		// Start typing your C/C++ solution below
@@ -158,19 +136,6 @@ TreeNode *buildTree(vector<int> &inorder, vector<int> &postorder) {
 
 		return neg ? -res : res;
 
-	}
-
-	vector<int> grayCode(int n) {
-		// Start typing your C/C++ solution below
-		// DO NOT write int main() function
-		vector<int> res(1,0);
-		for(int j=1; j<=n; j++) {
-			int size = res.size();
-			for(int i=size-1; i>=0; i--) {
-				res.push_back( res[i] + (1<<(j-1)));
-			}
-		}
-		return res;
 	}
 
 	vector<Interval> insert(vector<Interval> &intervals, Interval newInterval) {
