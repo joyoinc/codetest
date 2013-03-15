@@ -7,6 +7,7 @@ void run(char * funcname) {
   map<string, void(Solution::*)() , CompString1> mpFunc;
   mpFunc["isPalindrome"] = &Solution::isPalindromeTest;
   mpFunc["anagrams"] = &Solution::anagramsTest;
+  mpFunc["triangle"] = &Solution::minimumTotalTest;
 
   string strfunc(funcname);
   if(mpFunc.find(strfunc) != mpFunc.end()) {

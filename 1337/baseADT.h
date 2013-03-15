@@ -123,26 +123,6 @@ public:
 
     }
 
-	int minimumTotal(vector<vector<int> > &triangle) {
-        // Start typing your C/C++ solution below
-        // DO NOT write int main() function
-        int len = triangle.size();
-        if(!len) return 0;
-        
-        vector<int> work(triangle[len-1]);
-        
-        for(; len>1; --len) {
-            
-            for(int i=0; i<=len-2; --i) {
-                
-                if(work[i+1] < work[i]) work[i] = work[i+1];
-                work[i] += triangle[len-2][i];
-                
-            }
-            
-        }      
-        return work[0];
-    }
 
 	vector<vector<int> > combinationSum(vector<int> &candidates, int target) {
     // Start typing your C/C++ solution below

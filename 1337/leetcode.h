@@ -6,6 +6,7 @@
 extern char BUF[];
 
 #include<iostream>
+#include<sstream>
 #include<algorithm>
 #include<string.h>
 #include<vector>
@@ -19,6 +20,8 @@ struct Solution {
   void isPalindromeTest();
   vector<string> anagrams(vector<string> &strs);
   void anagramsTest();
+  int minimumTotal(vector<vector<int> > &triangle) ;
+  void minimumTotalTest() ;
 };
 
 template <class T>
