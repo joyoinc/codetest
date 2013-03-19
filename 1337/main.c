@@ -11,6 +11,7 @@ void run(char * funcname) {
   mpFunc["buildTreePreIn"] = &Solution::buildTreeFromPreInTest;
   mpFunc["grayCode"] = &Solution::grayCodeTest;
   mpFunc["reverse"] = &Solution::reverseBetweenTest;
+  mpFunc["partition"] = &Solution::partitionTest;
  //mpFunc["triangle"] = &Solution::minimumTotalTest;
 
   string strfunc(funcname);

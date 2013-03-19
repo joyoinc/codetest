@@ -429,29 +429,6 @@ bool exist(vector<vector<char> > &board, string word) {
 		return n+1;
 	}
 
-	ListNode *partition(ListNode *head, int x) {
-		// Start typing your C/C++ solution below
-		// DO NOT write int main() function
-		ListNode sen0(0); ListNode sen1(0);
-		ListNode * tail = &sen1;
-		ListNode * prv = &sen0;
-		sen0.next = head;
-		ListNode * cur = head;
-		while(cur) {
-			if(cur->val >= x) {
-				prv->next = cur->next;
-				tail->next = cur;
-				tail = tail->next;
-			} else {
-				prv = cur;
-			}
-			cur = cur->next;
-		}
-		tail->next = cur;
-		prv->next = sen1.next;
-		return sen0.next;
-	}
-
 	int maxArea(vector<int> &height) {
 		// Start typing your C/C++ solution below
 		// DO NOT write int main() function
