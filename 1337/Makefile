@@ -9,14 +9,14 @@ OBJ = main.o is_palindrome.o anagrams.o triangle.o \
 			parenthesis.o array.o link_list.o
 #LIB = util.o
 
-leetcode.ex : $(OBJ)
-	$(CC) -o $@ $^ $(LINK) 
+leetcode : $(OBJ)
+	$(CC) -o $@.out $^ $(LINK) 
 
 #lib : $(LIB)
 #	$(CC) -shared -fPCI -o libmyutil.so $<
 #	cp libmyutil.so /home/nia/bin
 
 clean:
+	rm -rf *.out
 	rm -rf *.o
 	rm -rf *.tmp
-	rm -rf *.ex

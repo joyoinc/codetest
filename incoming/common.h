@@ -6,14 +6,25 @@
 extern char BUF[];
 
 #include <iostream>
+#include <stdio.h>
 #include <algorithm>
 #include <string.h>
+#include <sstream>
 #include <vector>
 #include <deque>
 #include <set>
 #include <map>
 
 using namespace std;
+
+int leftMost1(int n) {
+    n |= (n>>1);
+    n |= (n>>2);
+    n |= (n>>4);
+    n |= (n>>8);
+    n |= (n>>16);
+    return n - (n>>1);
+}
 
 template <class T>
 ostream& operator<< (ostream &os, vector<T> &v) {
