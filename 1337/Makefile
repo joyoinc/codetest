@@ -6,10 +6,10 @@ LINK =
 
 OBJ = main.o is_palindrome.o anagrams.o triangle.o \
 			build_tree.o gray_code.o reverse.o roman.o \
-			parenthesis.o
+			parenthesis.o array.o
 #LIB = util.o
 
-leetcode : $(OBJ)
+leetcode.ex : $(OBJ)
 	$(CC) -o $@ $^ $(LINK) 
 
 #lib : $(LIB)
@@ -19,4 +19,4 @@ leetcode : $(OBJ)
 clean:
 	rm -rf *.o
 	rm -rf *.tmp
-	rm leetcode
+	rm -rf *.ex

@@ -96,6 +96,10 @@ struct Solution {
   vector<string> generateParenthesis(int n) ;
   void generateParenthesisRecur(vector<string> &res, string current, int left, int right) ;
   void generateParenthesisTest() ;
+
+  int searchInsert(int A[], int n, int target) ;
+  void searchInsertTest() ;
+
 };
 
 #endif

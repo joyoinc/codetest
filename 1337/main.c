@@ -14,6 +14,7 @@ void run(char * funcname) {
   mpFunc["reverse"] = &Solution::reverseBetweenTest;
   mpFunc["int2roman"] = &Solution::intToRomanTest;
   mpFunc["gParenthesis"] = &Solution::generateParenthesisTest;
+  mpFunc["searchInsert"] = &Solution::searchInsertTest;
 
   string strfunc(funcname);
   if(mpFunc.find(strfunc) != mpFunc.end()) {
