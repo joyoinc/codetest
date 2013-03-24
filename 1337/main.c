@@ -15,6 +15,7 @@ void run(char * funcname) {
   mpFunc["int2roman"] = &Solution::intToRomanTest;
   mpFunc["gParenthesis"] = &Solution::generateParenthesisTest;
   mpFunc["searchInsert"] = &Solution::searchInsertTest;
+  mpFunc["partition"] = &Solution::partitionTest;
 
   string strfunc(funcname);
   if(mpFunc.find(strfunc) != mpFunc.end()) {

@@ -87,6 +87,9 @@ struct Solution {
   vector<int> grayCode(int n);
   void grayCodeTest();
 
+  ListNode * partition(ListNode *head, int x) ;
+  void partitionTest() ;
+
   ListNode * reverseBetween(ListNode *head, int m, int n) ;
   void reverseBetweenTest() ;
 
