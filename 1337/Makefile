@@ -5,7 +5,8 @@ CFLAGS=-ggdb
 LINK =
 
 OBJ = main.o is_palindrome.o anagrams.o triangle.o \
-			build_tree.o gray_code.o reverse.o
+			build_tree.o gray_code.o reverse.o roman.o \
+			parenthesis.o
 #LIB = util.o
 
 leetcode : $(OBJ)
@@ -18,3 +19,4 @@ leetcode : $(OBJ)
 clean:
 	rm -rf *.o
 	rm -rf *.tmp
+	rm leetcode

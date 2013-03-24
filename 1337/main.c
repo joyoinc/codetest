@@ -7,11 +7,13 @@ void run(char * funcname) {
   map<string, void(Solution::*)() , CompString1> mpFunc;
   mpFunc["isPalindrome"] = &Solution::isPalindromeTest;
   mpFunc["anagrams"] = &Solution::anagramsTest;
+  mpFunc["triangle"] = &Solution::minimumTotalTest;
   mpFunc["buildTreeInPost"] = &Solution::buildTreeFromInPostTest;
   mpFunc["buildTreePreIn"] = &Solution::buildTreeFromPreInTest;
   mpFunc["grayCode"] = &Solution::grayCodeTest;
   mpFunc["reverse"] = &Solution::reverseBetweenTest;
- //mpFunc["triangle"] = &Solution::minimumTotalTest;
+  mpFunc["int2roman"] = &Solution::intToRomanTest;
+  mpFunc["gParenthesis"] = &Solution::generateParenthesisTest;
 
   string strfunc(funcname);
   if(mpFunc.find(strfunc) != mpFunc.end()) {

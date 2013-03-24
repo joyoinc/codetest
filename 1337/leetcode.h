@@ -89,6 +89,13 @@ struct Solution {
 
   ListNode * reverseBetween(ListNode *head, int m, int n) ;
   void reverseBetweenTest() ;
+
+  string intToRoman(int num) ;
+  void intToRomanTest() ;
+
+  vector<string> generateParenthesis(int n) ;
+  void generateParenthesisRecur(vector<string> &res, string current, int left, int right) ;
+  void generateParenthesisTest() ;
 };
 
 #endif

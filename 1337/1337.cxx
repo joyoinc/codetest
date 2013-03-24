@@ -41,25 +41,6 @@ bool exist(vector<vector<char> > &board, string word) {
     }
 
 
-	string intToRoman(int num) {
-		// Start typing your C/C++ solution below
-		// DO NOT write int main() function    
-		string ones [] = {"", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"};
-		string tens [] = {"", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"};
-		string huns [] = {"", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"};
-		int sizes [] = {0, 1, 2, 3, 2, 1, 2, 3, 4, 2};
-
-		int n = (num/1000);
-		string ans(n, 'M');
-		num %= 1000;
-
-		ans += huns[num/100]; num %=100;
-		ans += tens[num/10]; num %=10;
-		ans += ones[num];
-
-		return ans;
-	}
-
 	int romanToInt(string s) {
 		int ans = 0; 
 		int i = 0;
