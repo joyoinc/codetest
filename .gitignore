@@ -1,4 +1,6 @@
 *.o
+*.out
 *.tmp
 *.txt
 *.in
+*tags
