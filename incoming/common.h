@@ -8,6 +8,7 @@ extern char BUF[];
 #include <iostream>
 #include <algorithm>
 #include <string.h>
+#include <sstream>
 #include <vector>
 #include <deque>
 #include <set>
