@@ -103,6 +103,8 @@ struct Solution {
   int searchInsert(int A[], int n, int target) ;
   void searchInsertTest() ;
 
+  vector<int> findSubstring(string S, vector<string> &L) ;
+  void findSubstringTest() ;
 };
 
 #endif

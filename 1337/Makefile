@@ -6,7 +6,7 @@ LINK =
 
 OBJ = main.o is_palindrome.o anagrams.o triangle.o \
 			build_tree.o gray_code.o roman.o \
-			parenthesis.o array.o link_list.o
+			parenthesis.o array.o link_list.o strings.o
 #LIB = util.o
 
 leetcode : $(OBJ)

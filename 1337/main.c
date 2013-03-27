@@ -16,6 +16,7 @@ void run(char * funcname) {
   mpFunc["gParenthesis"] = &Solution::generateParenthesisTest;
   mpFunc["searchInsert"] = &Solution::searchInsertTest;
   mpFunc["partition"] = &Solution::partitionTest;
+  mpFunc["findSubstring"] = &Solution::findSubstringTest;
 
   string strfunc(funcname);
   if(mpFunc.find(strfunc) != mpFunc.end()) {
