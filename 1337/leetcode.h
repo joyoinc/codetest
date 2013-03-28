@@ -9,6 +9,7 @@ extern char BUF[];
 #include<sstream>
 #include<algorithm>
 #include<string.h>
+#include<stdio.h>
 #include<vector>
 #include<set>
 #include<map>
@@ -105,6 +106,9 @@ struct Solution {
 
   vector<int> findSubstring(string S, vector<string> &L) ;
   void findSubstringTest() ;
+
+  void minWindowTest() ;
+  string minWindow(string S, string T) ;
 };
 
 #endif
