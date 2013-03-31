@@ -11,6 +11,7 @@ extern char BUF[];
 #include<string.h>
 #include<stdio.h>
 #include<vector>
+#include<stack>
 #include<set>
 #include<map>
 
@@ -109,6 +110,12 @@ struct Solution {
 
   void minWindowTest() ;
   string minWindow(string S, string T) ;
+
+  void strStrTest() ;
+  char * strStr(char *haystack, char *needle) ;
+
+  void isValidTest() ;
+  bool isValid(string s) ;
 };
 
 #endif

@@ -72,22 +72,6 @@ bool exist(vector<vector<char> > &board, string word) {
 		return ans;
 	}
 
-	bool isValid(string s) {
-		// Start typing your C/C++ solution below
-		// DO NOT write int main() function
-		stack<char> sk; sk.push('^');
-
-		for(int i=0; i<s.length(); i++) {
-			if(s[i]=='(' || s[i]=='{' || s[i]=='[') 
-				sk.push(s[i]);
-
-			if(s[i]==')') { if(sk.top()=='(') sk.pop(); else return false;}
-			if(s[i]=='}') { if(sk.top()=='{') sk.pop(); else return false;}
-			if(s[i]==']') { if(sk.top()=='[') sk.pop(); else return false;}
-		}
-		return sk.top()=='^';
-	}
-
 	int divide(int dividend, int divisor) {
 		// Start typing your C/C++ solution below
 		// DO NOT write int main() function

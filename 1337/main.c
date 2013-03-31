@@ -17,6 +17,9 @@ void run(char * funcname) {
   mpFunc["searchInsert"] = &Solution::searchInsertTest;
   mpFunc["partition"] = &Solution::partitionTest;
   mpFunc["findSubstring"] = &Solution::findSubstringTest;
+  mpFunc["minWindow"] = &Solution::minWindowTest;
+  mpFunc["strstr"] = &Solution::strStrTest;
+  mpFunc["validP"] = &Solution::isValidTest;
 
   string strfunc(funcname);
   if(mpFunc.find(strfunc) != mpFunc.end()) {
