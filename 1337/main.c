@@ -17,6 +17,9 @@ void run(char * funcname) {
   mpFunc["searchInsert"] = &Solution::searchInsertTest;
   mpFunc["partition"] = &Solution::partitionTest;
   mpFunc["findSubstring"] = &Solution::findSubstringTest;
+  mpFunc["removeEl"] = &Solution::removeElementTest;
+  mpFunc["removeDupAry"] = &Solution::removeDuplicatesTest;
+  mpFunc["removeDupAry2"] = &Solution::removeDuplicates2Test;
 
   string strfunc(funcname);
   if(mpFunc.find(strfunc) != mpFunc.end()) {

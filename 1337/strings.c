@@ -71,7 +71,7 @@ string Solution::minWindow(string S, string T) {
   int i;
   for(i=0; i<T.size(); ++i)
   
-  struct entry { int pos, entry *next; };
+struct entry { int pos; entry *next; };
 
 
   return "";

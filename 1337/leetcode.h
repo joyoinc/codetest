@@ -109,6 +109,16 @@ struct Solution {
 
   void minWindowTest() ;
   string minWindow(string S, string T) ;
+
+  void removeElementTest() ;
+  int removeElement(int A[], int n, int elem) ;
+
+  void removeDuplicatesTest() ;
+  int removeDuplicates(int A[], int n) ;
+
+  void removeDuplicates2Test() ;
+  int removeDuplicates2(int A[], int n) ;
+
 };
 
 #endif
