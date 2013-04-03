@@ -153,41 +153,6 @@ bool exist(vector<vector<char> > &board, string word) {
 		return res;
 	}
 
-	int removeDuplicates(int A[], int n) {
-		// Start typing your C/C++ solution below
-		// DO NOT write int main() function
-		if(n<2) return n;
-		int i=n;
-		while(i) {
-			if(A[i-1]==A[i-2]) {
-				for(int j=i-1; j<n; j++) { A[j] = A[j+1]; }
-				n--;
-			} 
-			i--;
-		}
-		return n;
-	}
-
-	int removeDuplicates(int A[], int n) {
-		// Start typing your C/C++ solution below
-		// DO NOT write int main() function
-		const int rep = 3;
-		if(n<rep) return n;
-		int i=n;
-		int count = rep-1;
-		while(i) {
-			if(!count) {
-				for(int j=i-1; j<n; j++) { A[j] = A[j+1]; }
-				n--; count++;
-			}
-			else if(A[i-1]==A[i-2]) {
-				count--; i--;
-			} else {
-				count = rep-1; i--;
-			}
-		}
-		return n;
-	}
 
 	ListNode *deleteDuplicates(ListNode *head) {
 		// Start typing your C/C++ solution below
@@ -231,25 +196,6 @@ bool exist(vector<vector<char> > &board, string word) {
 		}
 
 		return sen.next;
-	}
-
-	int removeElement(int A[], int n, int elem) {
-		// Start typing your C/C++ solution below
-		// DO NOT write int main() function
-		int t, end = n;
-		while(end && A[end-1]==elem) end--;
-		if(!end) return end;
-		int i=0;
-		while(i<end) {
-			if(A[i] == elem) {
-				t = A[i]; A[i] = A[end-1]; A[end-1] = t;
-				end--;
-				t = A[i]; A[i] = A[end-1]; A[end-1] = t;
-			} else {
-				i++;
-			}
-		}
-		return end;
 	}
 
 	int minDistance(string word1, string word2) {

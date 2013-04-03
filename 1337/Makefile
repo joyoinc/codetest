@@ -20,3 +20,4 @@ clean:
 	rm -rf *.out
 	rm -rf *.o
 	rm -rf *.tmp
+	rm -rf *~

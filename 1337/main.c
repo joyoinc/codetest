@@ -20,6 +20,9 @@ void run(char * funcname) {
   mpFunc["minWindow"] = &Solution::minWindowTest;
   mpFunc["strstr"] = &Solution::strStrTest;
   mpFunc["validP"] = &Solution::isValidTest;
+  mpFunc["removeEl"] = &Solution::removeElementTest;
+  mpFunc["removeDupAry"] = &Solution::removeDuplicatesTest;
+  mpFunc["removeDupAry2"] = &Solution::removeDuplicates2Test;
 
   string strfunc(funcname);
   if(mpFunc.find(strfunc) != mpFunc.end()) {
